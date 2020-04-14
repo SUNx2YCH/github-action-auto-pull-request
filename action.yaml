@@ -26,5 +26,4 @@ inputs:
     default: ''
 runs:
   using: 'docker'
-  #image: 'docker://sunx2ych/github-action-auto-pull-request:1.0.0'
-  image: 'docker/Dockerfile'
+  image: 'docker://sunx2ych/github-action-auto-pull-request:1.0.0'
