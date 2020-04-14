@@ -1,0 +1,30 @@
+name: 'auto-pull-request'
+description: ''
+inputs:
+  repository:
+    description: ''
+    required: true
+  branch:
+    description: ''
+    required: true
+  file_path:
+    description: ''
+    required: true
+  file_template:
+    description: ''
+    required: true
+  message:
+    description: ''
+    required: true
+  labels:
+    description: ''
+    required: false
+    default: ''
+  reviewers:
+    description: ''
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  #image: 'docker://sunx2ych/github-action-auto-pull-request:1.0.0'
+  image: 'docker/Dockerfile'
