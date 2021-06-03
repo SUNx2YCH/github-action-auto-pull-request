@@ -1,27 +1,27 @@
 name: 'auto-pull-request'
-description: ''
+description: 'Updates a file according to provided template and creates pull request for this change'
 inputs:
   repository:
-    description: ''
+    description: 'destination repo'
     required: true
   branch:
-    description: ''
+    description: 'destination branch'
     required: true
   file_path:
-    description: ''
+    description: 'file to create/change'
     required: true
   file_template:
-    description: ''
+    description: 'file content'
     required: true
   message:
-    description: ''
+    description: 'pull request message'
     required: true
   labels:
-    description: ''
+    description: 'pull request labels'
     required: false
     default: ''
   reviewers:
-    description: ''
+    description: 'pull request reviewers'
     required: false
     default: ''
 runs:
